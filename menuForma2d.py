@@ -12,19 +12,19 @@ except:
 def menuForma():
     forma = input("Selecione a forma:\n0- Sair\n1- Quadrado\n2- Triangulo\n3- Circulo\n")
 
-    glutInit() # Initialize a glut instance which will allow us to customize our window
-    glutInitDisplayMode(GLUT_RGBA) # Set the display mode to be colored
-    glutInitWindowSize(500, 500)   # Set the width and height of your window
-    glutInitWindowPosition(0, 0)   # Set the position at which this windows should appear
-    glutCreateWindow("OpenGL Coding Practice") # Give your window a title
+    glutInit()
+    glutInitDisplayMode(GLUT_RGBA)
+    glutInitWindowSize(500, 500)
+    glutInitWindowPosition(0, 0)
+    glutCreateWindow("Transformações geométricas")
     if forma == "1":
-        glutDisplayFunc(sc.showScreenQuadrado)  # Tell OpenGL to call the showScreen method continuously
-        glutIdleFunc(sc.showScreenQuadrado)     # Draw any graphics or shapes in the showScreen function at all times
+        glutDisplayFunc(sc.showScreenQuadrado)  # chama o método continuamente
+        glutIdleFunc(sc.showScreenQuadrado)     # desenha as formas
     elif forma == "2":
-        glutDisplayFunc(sc.showScreenTriangulo)  # Tell OpenGL to call the showScreen method continuously
+        glutDisplayFunc(sc.showScreenTriangulo)
         glutIdleFunc(sc.showScreenTriangulo)
     elif forma == "3": 
-        glutDisplayFunc(sc.showScreenCirculo)  # Tell OpenGL to call the showScreen method continuously
+        glutDisplayFunc(sc.showScreenCirculo)
         glutIdleFunc(sc.showScreenCirculo)
-    glutMainLoop()  # Keeps the window created above displaying/running in a loop
+    glutMainLoop()  # mantem a janela em loop
 menuForma()

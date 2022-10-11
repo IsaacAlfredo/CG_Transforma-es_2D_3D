@@ -2,7 +2,7 @@ from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
 import formas
-from menu2d import matResult,menu2d
+from menu2d import matResult
 import operacoes as op
 import numpy as np
 
@@ -44,6 +44,9 @@ def transfExemplo3():
 
 
 def iterate():
+    #honestamente, não sei bem como essa função trabalha apesar de ter lido a documentação do método.
+    #Sei apenas que ela mantem a figura continuamente na janela. Deixei outros métodos em comentário, que 
+    #estavam na implementação onde encontrei essa função, porém não se mostraram necessários.
     #glViewport(0, 0, 500, 500)
     #glMatrixMode(GL_PROJECTION)
     #glLoadIdentity()
@@ -52,29 +55,25 @@ def iterate():
     #glLoadIdentity()
 
 def showScreenQuadrado():
-    #glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT) # Remove everything from screen (i.e. displays all white)
-    #glLoadIdentity() # Reset all graphic/shape's position
     iterate()
-    glColor3f(1.0, 0.0, 3.0) # Set the color to pink
+    glColor3f(1.0, 0.0, 3.0) # Cor rosa
     formas.quadrado(0,0,transfExemplo())
     glColor3f(50.0, 50.0, 50.0)
-    formas.quadrado(0,0,np.identity(3))
+    formas.quadrado(0,0,np.identity(3)) #utilizamos a matriz identidade para manter o objeto inalterado a fins de comparação
     glutSwapBuffers()
 
 def showScreenTriangulo():
     iterate()
-    glColor3f(1.0, 0.0, 3.0) # Set the color to pink
+    glColor3f(1.0, 0.0, 3.0) 
     formas.triangulo(0,0,transfExemplo())
     glColor3f(50.0, 50.0, 50.0)
     formas.triangulo(0,0,np.identity(3))
     glutSwapBuffers()
 def showScreenCirculo():
     iterate()
-    glColor3f(1.0, 0.0, 3.0) # Set the color to pink
+    glColor3f(1.0, 0.0, 3.0)
     formas.circulo(0,0,transfExemplo())
     glColor3f(50.0, 50.0, 50.0)
     formas.circulo(0,0,np.identity(3))
 
     glutSwapBuffers()
-
-#print(np.matmul(transfExemplo(),[1,1,1]))

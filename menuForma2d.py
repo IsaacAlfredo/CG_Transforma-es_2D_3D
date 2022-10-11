@@ -27,3 +27,4 @@ def menuForma():
         glutDisplayFunc(sc.showScreenCirculo)  # Tell OpenGL to call the showScreen method continuously
         glutIdleFunc(sc.showScreenCirculo)
     glutMainLoop()  # Keeps the window created above displaying/running in a loop
+menuForma()

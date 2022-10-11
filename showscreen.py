@@ -16,6 +16,32 @@ def transfExemplo():
     #print(matResult(listaMatrizes))
     return matResult(listaMatrizes)
     
+def transfExemplo2():
+    listaMatrizes = []
+    listaMatrizes.append(op.escala(2,2))
+    listaMatrizes.append(op.escalaInv(2,2))
+    listaMatrizes.append(op.translacao(100,100))
+    listaMatrizes.append(op.translacaoInv(100,100))
+    listaMatrizes.append(op.rotacao(45))
+    listaMatrizes.append(op.rotacaoInv(45))
+    #listaMatrizes.append(op.rotacao(90))
+    #listaMatrizes.reverse()
+    #print(matResult(listaMatrizes))
+    return matResult(listaMatrizes)
+
+def transfExemplo3():
+    listaMatrizes = []
+    listaMatrizes.append(op.escala(2,2))
+    listaMatrizes.append(op.escalaInv(1.5,3))
+    listaMatrizes.append(op.translacao(100,100))
+    listaMatrizes.append(op.translacaoInv(50,50))
+    listaMatrizes.append(op.rotacao(45))
+    listaMatrizes.append(op.rotacaoInv(25))
+    #listaMatrizes.append(op.rotacao(90))
+    #listaMatrizes.reverse()
+    #print(matResult(listaMatrizes))
+    return matResult(listaMatrizes)
+
 
 def iterate():
     #glViewport(0, 0, 500, 500)

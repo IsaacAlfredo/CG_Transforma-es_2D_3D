@@ -27,4 +27,3 @@ def menuForma():
         glutDisplayFunc(sc.showScreenCirculo)
         glutIdleFunc(sc.showScreenCirculo)
     glutMainLoop()  # mantem a janela em loop
-menuForma()

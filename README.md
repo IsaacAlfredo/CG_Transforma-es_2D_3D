@@ -1,6 +1,8 @@
 # CG_Transformações_2D_3D
 
-Antes de rodar o código, gostaria de avisar que a distribuição oficial do PyOpenGL não está funcionando, então tive que buscar uma distribuição não oficial. Caso tenha esse problema, o arquivo necessário está no diretório, o "PyOpenGL-3.1.6-cp310-cp310-win_amd64.whl", basta rodar: pip install "caminhoDoArquivo". 
+Alunos: Isaac Alfredo de Freitas Silva (18111335),
+
+Antes de rodar o código, gostaria de avisar que a distribuição oficial do PyOpenGL não está funcionando, então tive que buscar uma distribuição não oficial. Caso tenha esse problema, o arquivo necessário está no diretório, o "PyOpenGL-3.1.6-cp310-cp310-win_amd64.whl", basta rodar: pip install "caminhoDoArquivo".
 
 Não foi possível utilizar a matriz gerada pela primeira parte do código para modificar as figuras, visto que: 1- Não é possível passar parâmetros nos métodos "showscreen", uma vez que eles são usados no método da opengl "glutDisplayFunc" (no menuForma2d.py) e esse método não aceita callback como parâmetro; 2- Também não conseguimos fazer isso dentro do próprio escopo da função, isso faz a janela travar, provavelmente porque ela fica em loop e acaba bugando por conta dos inputs.
 

@@ -8,29 +8,29 @@ def menu2d():
         if menu == "0":
             break
         elif menu == "1":
-            tx = int(input("Digite o fator de translação em x:\n"))
-            ty = int(input("Digite o fator de translação em y:\n"))
+            tx = float(input("Digite o fator de translação em x:\n"))
+            ty = float(input("Digite o fator de translação em y:\n"))
             listaMatrizes.append(op.translacao(tx,ty))
         elif menu == "2":
-            angulo = int(input("Digite o angulo de rotação:\n"))
+            angulo = float(input("Digite o angulo de rotação:\n"))
             listaMatrizes.append(op.rotacao(angulo))
         elif menu == "3":
-            sx = int(input("Digite o fator de escala em x:\n"))
-            sy = int(input("Digite o fator de escala em y:\n"))
+            sx = float(input("Digite o fator de escala em x:\n"))
+            sy = float(input("Digite o fator de escala em y:\n"))
             listaMatrizes.append(op.escala(sx,sy))
         elif menu == "4":
             print("O valor digitado será considerado negativo")
-            tx = int(input("Digite o fator de translação em x:\n"))
-            ty = int(input("Digite o fator de translação em y:\n"))
+            tx = float(input("Digite o fator de translação em x:\n"))
+            ty = float(input("Digite o fator de translação em y:\n"))
             listaMatrizes.append(op.translacaoInv(tx,ty))
         elif menu == "5":
             print("O valor digitado será considerado negativo")
-            angulo = int(input("Digite o angulo de rotação:\n"))
+            angulo = float(input("Digite o angulo de rotação:\n"))
             listaMatrizes.append(op.rotacaoInv(angulo))
         elif menu == "6":
             print("O valor digitado será considerado negativo")
-            sx = int(input("Digite o fator de escala em x:\n"))
-            sy = int(input("Digite o fator de escala em y:\n"))
+            sx = float(input("Digite o fator de escala em x:\n"))
+            sy = float(input("Digite o fator de escala em y:\n"))
             listaMatrizes.append(op.escalaInv(sx,sy))
         else:
             print("Opção inválida.")

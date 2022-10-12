@@ -21,12 +21,12 @@ def menu3d():
         if menu == "0":
             break
         elif menu == "1":
-            tx = int(input("\nDigite o fator de translação em x:\n=> "))
-            ty = int(input("Digite o fator de translação em y:\n=> "))
-            tz = int(input("Digite o fator de translação em z:\n=> "))
+            tx = float(input("\nDigite o fator de translação em x:\n=> "))
+            ty = float(input("Digite o fator de translação em y:\n=> "))
+            tz = float(input("Digite o fator de translação em z:\n=> "))
             listaMatrizes.append(op3d.translacao(tx, ty, tz))
         elif menu == "2":
-            angulo = int(input("\nDigite o angulo de rotação:\n=> "))
+            angulo = float(input("\nDigite o angulo de rotação:\n=> "))
             eixo = input(
                 "Escolha um eixo para rotação:\n"
                 "0- X\n"
@@ -44,19 +44,19 @@ def menu3d():
             else:
                 print("\nOpção inválida.")
         elif menu == "3":
-            sx = int(input("\nDigite o fator de escala em x:\n=> "))
-            sy = int(input("Digite o fator de escala em y:\n=> "))
-            sz = int(input("Digite o fator de escala em z:\n=> "))
+            sx = float(input("\nDigite o fator de escala em x:\n=> "))
+            sy = float(input("Digite o fator de escala em y:\n=> "))
+            sz = float(input("Digite o fator de escala em z:\n=> "))
             listaMatrizes.append(op3d.escala(sx, sy, sz))
         elif menu == "4":
             print("\nO valor digitado será considerado negativo")
-            tx = int(input("\nDigite o fator de translação em x:\n=> "))
-            ty = int(input("Digite o fator de translação em y:\n=> "))
-            tz = int(input("Digite o fator de translação em z:\n=> "))
+            tx = float(input("\nDigite o fator de translação em x:\n=> "))
+            ty = float(input("Digite o fator de translação em y:\n=> "))
+            tz = float(input("Digite o fator de translação em z:\n=> "))
             listaMatrizes.append(op3d.translacaoInv(tx, ty, tz))
         elif menu == "5":
             print("\nO valor digitado será considerado negativo")
-            angulo = int(input("Digite o angulo de rotação:\n=> "))
+            angulo = float(input("Digite o angulo de rotação:\n=> "))
             eixo = input(
                 "Escolha um eixo para rotação:\n"
                 "0- X\n"
@@ -75,9 +75,9 @@ def menu3d():
                 print("\nOpção inválida.")
         elif menu == "6":
             print("\nO valor digitado será considerado negativo")
-            sx = int(input("Digite o fator de escala em x:\n=> "))
-            sy = int(input("Digite o fator de escala em y:\n=> "))
-            sz = int(input("Digite o fator de escala em z:\n=> "))
+            sx = float(input("Digite o fator de escala em x:\n=> "))
+            sy = float(input("Digite o fator de escala em y:\n=> "))
+            sz = float(input("Digite o fator de escala em z:\n=> "))
             listaMatrizes.append(op3d.escalaInv(sx, sy, sz))
         else:
             print("\nOpção inválida.")

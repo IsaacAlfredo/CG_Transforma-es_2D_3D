@@ -81,4 +81,5 @@ def menu3d():
             listaMatrizes.append(op3d.escalaInv(sx, sy, sz))
         else:
             print("\nOpção inválida.")
+    print("Matriz resultante: ")
     print(matResult(listaMatrizes))

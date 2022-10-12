@@ -11,8 +11,6 @@ def menu2d():
             tx = int(input("Digite o fator de translação em x:\n"))
             ty = int(input("Digite o fator de translação em y:\n"))
             listaMatrizes.append(op.translacao(tx,ty))
-            print(listaMatrizes)
-
         elif menu == "2":
             angulo = int(input("Digite o angulo de rotação:\n"))
             listaMatrizes.append(op.rotacao(angulo))
@@ -36,4 +34,5 @@ def menu2d():
             listaMatrizes.append(op.escalaInv(sx,sy))
         else:
             print("Opção inválida.")
+    print("Matriz resultante: ")
     return listaMatrizes

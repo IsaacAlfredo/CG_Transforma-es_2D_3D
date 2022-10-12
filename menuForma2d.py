@@ -16,7 +16,7 @@ def menuForma():
     glutInitDisplayMode(GLUT_RGBA)
     glutInitWindowSize(500, 500)
     glutInitWindowPosition(0, 0)
-    glutCreateWindow("Transformações geométricas")
+    glutCreateWindow("Transformacoes geometricas")
     if forma == "1":
         glutDisplayFunc(sc.showScreenQuadrado)  # chama o método continuamente
         glutIdleFunc(sc.showScreenQuadrado)     # desenha as formas

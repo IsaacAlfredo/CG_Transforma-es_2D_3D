@@ -56,9 +56,9 @@ def iterate():
 def showScreenQuadrado():
     iterate()
     glColor3f(1.0, 0.0, 3.0) # Cor rosa
-    formas.quadrado(0,0,transfExemplo())
-    glColor3f(50.0, 50.0, 50.0)
-    formas.quadrado(0,0,np.identity(3)) #utilizamos a matriz identidade para manter o objeto inalterado a fins de comparação
+    formas.quadrado()
+    #glColor3f(50.0, 50.0, 50.0)
+    #formas.quadrado(0,0,np.identity(3)) #utilizamos a matriz identidade para manter o objeto inalterado a fins de comparação
     glutSwapBuffers()
 
 def showScreenTriangulo():

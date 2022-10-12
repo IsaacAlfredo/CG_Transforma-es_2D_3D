@@ -47,3 +47,45 @@ def circulo(x,y,transfMatriz):
         plinha = list(np.matmul(transfMatriz,p)) #pontos após a transformação
         glVertex2f(plinha[0],plinha[1])
     glEnd()
+
+def cubo():
+    #tentativa de fazer um cubo, porém não consegui descobrir exatamente como implementar a tempo
+    glBegin(GL_QUADS)
+ 
+    glColor3f(0.0,1.0,0.0)
+    glVertex3f( 100, 100,-100)
+    glVertex3f(-100, 100,-100)
+    glVertex3f(-100, 100, 100)
+    glVertex3f( 100, 100, 100) 
+
+    glColor3f(1.0,0.0,0.0)
+    glVertex3f( 100,-100, 100)
+    glVertex3f(-100,-100, 100)
+    glVertex3f(-100,-100,-100)
+    glVertex3f( 100,-100,-100) 
+
+    glColor3f(0.0,1.0,0.0)
+    glVertex3f( 100, 100, 100)
+    glVertex3f(-100, 100, 100)
+    glVertex3f(-100,-100, 100)
+    glVertex3f( 100,-100, 100)
+
+    glColor3f(1.0,1.0,0.0)
+    glVertex3f( 100,-100,-100)
+    glVertex3f(-100,-100,-100)
+    glVertex3f(-100, 100,-100)
+    glVertex3f( 100, 100,-100)
+
+    glColor3f(0.0,0.0,1.0)
+    glVertex3f(-100, 100, 100) 
+    glVertex3f(-100, 100,-100)
+    glVertex3f(-100,-100,-100) 
+    glVertex3f(-100,-100, 100) 
+
+    glColor3f(1.0,0.0,1.0)
+    glVertex3f( 100, 100,-100) 
+    glVertex3f( 100, 100, 100)
+    glVertex3f( 100,-100, 100)
+    glVertex3f( 100,-100,-100)
+
+    glEnd()

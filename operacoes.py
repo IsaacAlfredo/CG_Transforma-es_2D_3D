@@ -33,3 +33,9 @@ def escalaInv(sx,sy):
           [0,(1/sy),0],
           [0,0,1]]
 
+def matResult(listaMatrizes):
+    matrizResult = listaMatrizes[0]
+
+    for matriz in range(1,len(listaMatrizes)):
+        matrizResult = numpy.matmul(matrizResult,listaMatrizes[matriz])
+    return matrizResult

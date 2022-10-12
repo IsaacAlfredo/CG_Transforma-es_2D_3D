@@ -1,12 +1,4 @@
 import operacoes as op
-import numpy as np
-
-def matResult(listaMatrizes):
-    matrizResult = listaMatrizes[0]
-
-    for matriz in range(1,len(listaMatrizes)):
-        matrizResult = np.matmul(matrizResult,listaMatrizes[matriz])
-    return matrizResult
 
 def menu2d():
     listaMatrizes = []

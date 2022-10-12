@@ -2,7 +2,6 @@ from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
 import formas
-from menu2d import matResult
 import operacoes as op
 import numpy as np
 
@@ -13,8 +12,8 @@ def transfExemplo():
     listaMatrizes.append(op.rotacao(45))
     #listaMatrizes.append(op.rotacao(90))
     #listaMatrizes.reverse()
-    #print(matResult(listaMatrizes))
-    return matResult(listaMatrizes)
+    #print(op.matResult(listaMatrizes))
+    return op.matResult(listaMatrizes)
     
 def transfExemplo2():
     listaMatrizes = []
@@ -26,8 +25,8 @@ def transfExemplo2():
     listaMatrizes.append(op.rotacaoInv(45))
     #listaMatrizes.append(op.rotacao(90))
     #listaMatrizes.reverse()
-    #print(matResult(listaMatrizes))
-    return matResult(listaMatrizes)
+    #print(op.matResult(listaMatrizes))
+    return op.matResult(listaMatrizes)
 
 def transfExemplo3():
     listaMatrizes = []
@@ -39,8 +38,8 @@ def transfExemplo3():
     listaMatrizes.append(op.rotacaoInv(25))
     #listaMatrizes.append(op.rotacao(90))
     #listaMatrizes.reverse()
-    #print(matResult(listaMatrizes))
-    return matResult(listaMatrizes)
+    #print(op.matResult(listaMatrizes))
+    return op.matResult(listaMatrizes)
 
 
 def iterate():
